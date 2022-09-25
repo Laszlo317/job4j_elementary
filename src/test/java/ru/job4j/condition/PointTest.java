@@ -23,7 +23,7 @@ public class PointTest {
     }
 
     @Test
-    public void whenX0Y9toXneg6Y8Then25dot4() {
+    public void whenX0Y9toXneg6Y8Then6dot1() {
         double rsl = distance(0, 9, -6, 8);
         double expected = 6.1;
         Assert.assertEquals(rsl, expected, 0.1);
