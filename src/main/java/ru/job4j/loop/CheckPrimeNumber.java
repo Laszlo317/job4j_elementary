@@ -6,8 +6,8 @@ public class CheckPrimeNumber {
         if (number == 1) {
             return false;
         }
-        for (int i = 2; i <= number; i++) {
-            if (number % i == 0 && i != 1 && i != number) {
+        for (int i = 2; i < number; i++) {
+            if (number % i == 0) {
                 prime = false;
                 break;
             }
