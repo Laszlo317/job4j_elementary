@@ -20,4 +20,31 @@ public class FindLoopTest {
         int expected = -1;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    public void whenDiapasonHas2Then3() {
+        int[] data = new int[] {5, 2, 10, 2, 4};
+        int el = 2;
+        int start = 2;
+        int finish = 4;
+        int result = FindLoop.indexInRange(data, el, start, finish);
+        int expected = 3;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenDiapasonHas1Then3() {
+        int[] data = new int[] {0, 5, 2, 4, 2};
+        int rsl = FindLoop.indexInRange(data, 4, 1, 3);
+        int expected = -1;
+        assertThat(rsl).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenDiapasonHas0Then2() {
+        int[] data = new int[] {0, 5, 2, 4, 2};
+        int rsl = FindLoop.indexInRange(data, 5, 0, 2);
+        int expected = 1;
+        assertThat(rsl).isEqualTo(expected);
+    }
 }
