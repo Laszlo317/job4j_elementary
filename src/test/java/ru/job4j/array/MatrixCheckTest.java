@@ -63,6 +63,7 @@ public class MatrixCheckTest {
         char[] expected = {'1', '1', '1'};
         assertThat(result).containsExactly(expected);
     }
+
     @Test
     public void whenDiagonalMix() {
         char[][] input = {
