@@ -40,6 +40,18 @@ public class MatrixCheckTest {
         assertThat(result).isTrue();
     }
 
+    @Test
+    public void whenDoesntHaveMonoVertical() {
+        char[][] input = {
+                {' ', 'X', ' '},
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+        };
+        int column = 2;
+        boolean result = MatrixCheck.monoVertical(input, column);
+        assertThat(result).isFalse();
+    }
+
      @Test
     public void whenDiagonalFullX() {
         char[][] input = {
