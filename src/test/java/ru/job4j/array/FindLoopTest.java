@@ -36,7 +36,7 @@ public class FindLoopTest {
     public void whenDiapasonHas1Then3() {
         int[] data = new int[] {0, 5, 2, 4, 2};
         int rsl = FindLoop.indexInRange(data, 4, 1, 3);
-        int expected = -1;
+        int expected = 3;
         assertThat(rsl).isEqualTo(expected);
     }
 
