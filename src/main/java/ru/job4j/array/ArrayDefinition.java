@@ -6,7 +6,6 @@ public class ArrayDefinition {
         float[] prices = new float[40];
         System.out.println(age.length);
         System.out.println(prices.length);
-
         String[] names = new String[4];
         names[0] = "Kirill";
         names[1] = "Andrey";
