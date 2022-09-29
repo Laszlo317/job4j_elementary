@@ -5,4 +5,15 @@ public class Max {
         int rsl = left > right ? left : right;
         return rsl;
     }
+
+    public static int max(int first, int second, int third) {
+        int rsl = first > second ? first : second;
+        return rsl > third ? rsl : third;
+    }
+
+    public static int max(int first, int second, int third, int fourth) {
+        int rsl = first > second ? first : second;
+        rsl = rsl > third ? rsl : third;
+        return rsl > fourth ? rsl : fourth;
+    }
 }
