@@ -34,4 +34,13 @@ public class PointTest {
         double expected = 6.1;
         Assert.assertEquals(rsl, expected, 0.1);
     }
+
+    @Test
+    public void whenPoint461and724Then5dot8() {
+        Point p1 = new Point(4, 6, 1);
+        Point p2 = new Point(7, 2, 4);
+        double rsl = p1.distance3d(p2);
+        double expected = 5.8;
+        Assert.assertEquals(rsl, expected, 0.1);
+    }
 }
