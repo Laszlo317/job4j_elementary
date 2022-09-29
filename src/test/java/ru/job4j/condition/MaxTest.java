@@ -34,20 +34,3 @@ public class MaxTest {
         assertThat(result).isEqualTo(expected);
     }
 
-    @Test
-    public void whenMax1To5To3To8Then8() {
-        int result = Max.max(1, 5, 3, 8);
-        int expected = 8;
-        assertThat(result).isEqualTo(expected);
-    }
-
-    @Test
-    public void whenMax2To2To18hen2() {
-        int first = 2;
-        int second = 2;
-        int third = 1;
-        int result = Max.max(first, second, third);
-        int expected = 2;
-        assertThat(result).isEqualTo(expected);
-    }
-}
