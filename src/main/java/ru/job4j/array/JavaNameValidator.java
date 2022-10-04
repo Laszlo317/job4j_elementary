@@ -8,12 +8,12 @@ public class JavaNameValidator {
         }
         for (int i = 1; i < name.length(); i++) {
             char subject = name.charAt(i);
-            if (isSpecialSymbol(subject) || isLowerLatinLetter(subject)
-                    || isUpperLatinLetter(subject) || Character.isDigit(subject)) {
-                return true;
+            if (isSpecialSymbol(subject) && isLowerLatinLetter(subject)
+                    && isUpperLatinLetter(subject) && Character.isDigit(subject)) {
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
     public static boolean isSpecialSymbol(int code) {
